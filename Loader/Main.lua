@@ -21,6 +21,7 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/NoLag-id/No-Lag-
 
 local lootlabs = "https://ads.luarmor.net/get_key?for=Lootlabs_No_Lag-WAKXwZFYPyHF"
 local linkvertise = "https://ads.luarmor.net/get_key?for=Linkvertise_No_Lag-mSdMfyEDdcbV"
+local rinku = "https://ads.luarmor.net/get_key?for=Rinku_No_Lag-pozgARUxinWe"
 
 isLoad = false
 local keyFilePath = "NoLagKey.txt"
@@ -493,9 +494,22 @@ if not isLoad then
         linkVertiseButton.TextSize = 14
         linkVertiseButton.Font = Enum.Font.GothamBold
         linkVertiseButton.Parent = keyOptionsFrame
-        
+
+        local rinkuButton = Instance.new("TextButton")
+        rinkuButton.Name = "rinkuButton"
+        rinkuButton.Size = UDim2.new(1, -40, 0, 40)
+        rinkuButton.Position = UDim2.new(0, 20, 0, 160)
+        rinkuButton.BackgroundColor3 = colors.primary
+        rinkuButton.BorderSizePixel = 0
+        rinkuButton.Text = "RINKU (24H)"
+        rinkuButton.TextColor3 = colors.text
+        rinkuButton.TextSize = 14
+        rinkuButton.Font = Enum.Font.GothamBold
+        rinkuButton.Parent = keyOptionsFrame
+
         createButtonEffect(lootlabsButton)
         createButtonEffect(linkVertiseButton)
+        createButtonEffect(rinkuButton)
 
         keyOptionsCloseButton.MouseButton1Click:Connect(function()
             local tween = TweenService:Create(
@@ -523,6 +537,11 @@ if not isLoad then
         linkVertiseButton.MouseButton1Click:Connect(function()
             setclipboard(linkvertise)
             showNotification("Linkvertise link copied!", colors.accent)
+        end)
+
+        rinkuButton.MouseButton1Click:Connect(function()
+            setclipboard(rinku)
+            showNotification("Rinku link copied!", colors.accent)
         end)
 
         discordButton.MouseButton1Click:Connect(function()
