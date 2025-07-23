@@ -21,7 +21,7 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/NoLag-id/No-Lag-
 
 local lootlabs = "https://ads.luarmor.net/get_key?for=Lootlabs_No_Lag-WAKXwZFYPyHF"
 local linkvertise = "https://ads.luarmor.net/get_key?for=Linkvertise_No_Lag-mSdMfyEDdcbV"
-local rinku = "https://ads.luarmor.net/get_key?for=Rinku_No_Lag-pozgARUxinWe"
+local rinku = "https://ads.luarmor.net/get_key?for=Linkvertise_No_Lag_2-xgJOzYBvECEc"
 
 isLoad = false
 local keyFilePath = "NoLagKey.txt"
@@ -501,7 +501,7 @@ if not isLoad then
         rinkuButton.Position = UDim2.new(0, 20, 0, 160)
         rinkuButton.BackgroundColor3 = colors.primary
         rinkuButton.BorderSizePixel = 0
-        rinkuButton.Text = "RINKU (24H)"
+        rinkuButton.Text = "LINKVERTISE (24H)"
         rinkuButton.TextColor3 = colors.text
         rinkuButton.TextSize = 14
         rinkuButton.Font = Enum.Font.GothamBold
@@ -531,17 +531,17 @@ if not isLoad then
 
         lootlabsButton.MouseButton1Click:Connect(function()
             setclipboard(lootlabs)
-            showNotification("Lootlabs link copied!", colors.accent)
+            showNotification("Lootlabs 12H link copied!", colors.accent)
         end)
 
         linkVertiseButton.MouseButton1Click:Connect(function()
             setclipboard(linkvertise)
-            showNotification("Linkvertise link copied!", colors.accent)
+            showNotification("Linkvertise 12H link copied!", colors.accent)
         end)
 
         rinkuButton.MouseButton1Click:Connect(function()
             setclipboard(rinku)
-            showNotification("Rinku link copied!", colors.accent)
+            showNotification("Linkvertise 24H link copied!", colors.accent)
         end)
 
         discordButton.MouseButton1Click:Connect(function()
