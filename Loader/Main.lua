@@ -6,7 +6,7 @@ local scripts = {
     [137925884276740] = "2729679a8bec2bdc0cf738bc9be2610c",
     [103754275310547] = "57417a00f716dc2a604af0c07a3a6187",
     [86076978383613] = "57417a00f716dc2a604af0c07a3a6187",
-    [121864768012064] = "e5538026adb07cdd17a8deaff41ae1a2",
+    [121864768012064] = "8d8bfb27b22bab287e8034de117b4de6",
 }
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
