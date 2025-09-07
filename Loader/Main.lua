@@ -493,10 +493,10 @@ if not isLoad then
         local lockTrButton = Instance.new("TextButton")
         lockTrButton.Name = "lockTrButton"
         lockTrButton.Size = UDim2.new(1, -40, 0, 40)
-        lockTrButton.Position = UDim2.new(0, 20, 0, 60)
+        lockTrButton.Position = UDim2.new(0, 20, 0, 210)
         lockTrButton.BackgroundColor3 = colors.primary
         lockTrButton.BorderSizePixel = 0
-        lockTrButton.Text = "LOCKTR (24H)"
+        lockTrButton.Text = "LOCKTR (24 HOUR)"
         lockTrButton.TextColor3 = colors.text
         lockTrButton.TextSize = 14
         lockTrButton.Font = Enum.Font.GothamBold
@@ -508,7 +508,7 @@ if not isLoad then
         lootlabsButton.Position = UDim2.new(0, 20, 0, 110)
         lootlabsButton.BackgroundColor3 = colors.primary
         lootlabsButton.BorderSizePixel = 0
-        lootlabsButton.Text = "LOOTLABS (24H)"
+        lootlabsButton.Text = "LOOTLABS (24H HOUR)"
         lootlabsButton.TextColor3 = colors.text
         lootlabsButton.TextSize = 14
         lootlabsButton.Font = Enum.Font.GothamBold
@@ -520,7 +520,7 @@ if not isLoad then
         linkVertiseButton.Position = UDim2.new(0, 20, 0, 160)
         linkVertiseButton.BackgroundColor3 = colors.primary
         linkVertiseButton.BorderSizePixel = 0
-        linkVertiseButton.Text = "LINKVERTISE (24H)"
+        linkVertiseButton.Text = "LINKVERTISE (24 HOUR)"
         linkVertiseButton.TextColor3 = colors.text
         linkVertiseButton.TextSize = 14
         linkVertiseButton.Font = Enum.Font.GothamBold
@@ -529,10 +529,10 @@ if not isLoad then
         local rinkuButton = Instance.new("TextButton")
         rinkuButton.Name = "rinkuButton"
         rinkuButton.Size = UDim2.new(1, -40, 0, 40)
-        rinkuButton.Position = UDim2.new(0, 20, 0, 210)
+        rinkuButton.Position = UDim2.new(0, 20, 0, 60)
         rinkuButton.BackgroundColor3 = colors.primary
         rinkuButton.BorderSizePixel = 0
-        rinkuButton.Text = "LINKVERTISE (48H)"
+        rinkuButton.Text = "LINKVERTISE (48 HOUR)"
         rinkuButton.TextColor3 = colors.text
         rinkuButton.TextSize = 14
         rinkuButton.Font = Enum.Font.GothamBold
