@@ -26,7 +26,6 @@ local api = loadstring(game:HttpGet("https://sdkapi-public.luarmor.net/library.l
 local lootlabs = "https://ads.luarmor.net/get_key?for=Lootlabs_No_Lag-WAKXwZFYPyHF"
 local linkvertise = "https://ads.luarmor.net/get_key?for=Linkvertise_No_Lag-mSdMfyEDdcbV"
 local rinku = "https://ads.luarmor.net/get_key?for=Linkvertise_No_Lag_2-xgJOzYBvECEc"
-local lockTr = "https://ads.luarmor.net/get_key?for=Locktr-DoGxhWjOjSrc"
 
 isLoad = false
 local keyFilePath = "NoLagKey.txt"
@@ -490,25 +489,13 @@ if not isLoad then
         keyOptionsCloseButton.ImageRectSize = Vector2.new(24, 24)
         keyOptionsCloseButton.Parent = keyOptionsTitleBar
 
-        local lockTrButton = Instance.new("TextButton")
-        lockTrButton.Name = "lockTrButton"
-        lockTrButton.Size = UDim2.new(1, -40, 0, 40)
-        lockTrButton.Position = UDim2.new(0, 20, 0, 210)
-        lockTrButton.BackgroundColor3 = colors.primary
-        lockTrButton.BorderSizePixel = 0
-        lockTrButton.Text = "LOCKTR (24 HOUR)"
-        lockTrButton.TextColor3 = colors.text
-        lockTrButton.TextSize = 14
-        lockTrButton.Font = Enum.Font.GothamBold
-        lockTrButton.Parent = keyOptionsFrame
-
         local lootlabsButton = Instance.new("TextButton")
         lootlabsButton.Name = "lootlabsButton"
         lootlabsButton.Size = UDim2.new(1, -40, 0, 40)
         lootlabsButton.Position = UDim2.new(0, 20, 0, 110)
         lootlabsButton.BackgroundColor3 = colors.primary
         lootlabsButton.BorderSizePixel = 0
-        lootlabsButton.Text = "LOOTLABS (24H HOUR)"
+        lootlabsButton.Text = "LOOTLABS (24 HOUR)"
         lootlabsButton.TextColor3 = colors.text
         lootlabsButton.TextSize = 14
         lootlabsButton.Font = Enum.Font.GothamBold
@@ -541,7 +528,6 @@ if not isLoad then
         createButtonEffect(lootlabsButton)
         createButtonEffect(linkVertiseButton)
         createButtonEffect(rinkuButton)
-        createButtonEffect(lockTrButton)
 
         keyOptionsCloseButton.MouseButton1Click:Connect(function()
             local tween = TweenService:Create(
@@ -574,11 +560,6 @@ if not isLoad then
         rinkuButton.MouseButton1Click:Connect(function()
             setclipboard(rinku)
             showNotification("Linkvertise 24H link copied!", colors.accent)
-        end)
-
-        lockTrButton.MouseButton1Click:Connect(function()
-            setclipboard(lockTr)
-            showNotification("LOCKTR 24H link copied!", colors.accent)
         end)
 
         discordButton.MouseButton1Click:Connect(function()
