@@ -1,5 +1,8 @@
 repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game:GetService("Players").LocalPlayer and game:GetService("Players").LocalPlayer.Character
-
+if game.placeId == 127742093697776 then
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f0652d5d8288eb119ed2704a08d1618f.lua"))()
+    return
+end
 local scripts = {
     [126884695634066] = "7a953911595e67e8494c3d3446b8be5b", 
     [126509999114328] = "c67687e7d7ae30e2e9fd5658f34e8292",
