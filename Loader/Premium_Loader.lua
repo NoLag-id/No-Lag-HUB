@@ -1,7 +1,4 @@
-if game.placeId == 127742093697776 then
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f0652d5d8288eb119ed2704a08d1618f.lua"))()
-    return
-end
+
 local scripts = {
     [126884695634066] = "0ed437d8cae90390a7ccb3f7fc8bfb4e", 
     [126509999114328] = "f9b9a9a9beea541eab18184af63f6a00",
